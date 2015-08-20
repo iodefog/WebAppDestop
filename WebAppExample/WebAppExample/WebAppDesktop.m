@@ -79,6 +79,17 @@
 }
 
 
++ (instancetype)shareInstanced{
+    static WebAppDesktop *desktop = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (desktop == nil) {
+            desktop = [[WebAppDesktop alloc] init];
+        }
+    });
+    return desktop;
+}
+
 /*****
  *  进入后台， 关闭httpserver
  */

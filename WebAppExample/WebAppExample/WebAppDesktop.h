@@ -21,6 +21,7 @@
 
 @interface WebAppDesktop : NSObject
 
++ (instancetype)shareInstanced;
 
 - (void)setObject:(DesktopModel *)model;
 
