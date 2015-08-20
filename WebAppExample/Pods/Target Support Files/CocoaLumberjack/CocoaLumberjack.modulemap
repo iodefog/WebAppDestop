@@ -1,0 +1,4 @@
+module CocoaLumberjack {
+    header "CocoaLumberjack.h"
+    export *
+}
