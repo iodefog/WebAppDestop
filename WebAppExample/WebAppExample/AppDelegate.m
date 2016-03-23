@@ -26,7 +26,7 @@
     // Override point for customization after application launch.
     DesktopModel *model = [[DesktopModel alloc] init];
     model.title = @"WebApp";
-    model.urlScheme = @"WebAppExample";
+    model.urlScheme = @"WebAppExample://";
     model.moduleID = @"myWebAppExample";
     model.imageName = @"pocketbook";
     
